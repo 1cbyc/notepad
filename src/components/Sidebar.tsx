@@ -119,7 +119,9 @@ export default function Sidebar({ viewMode }: SidebarProps) {
       )}
 
       <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-500">
-        <span>{format(note.updatedAt, 'MMM d, yyyy')}</span>
+        <span>
+          {note.updatedAt ? format(new Date(note.updatedAt), 'MMM d, yyyy') : ''}
+        </span>
         {note.isFavorite && <Star className="w-3 h-3 text-yellow-500" fill="currentColor" />}
         {note.isArchived && <Archive className="w-3 h-3 text-orange-500" />}
       </div>
