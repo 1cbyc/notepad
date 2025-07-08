@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-      runtime: 'edge',
-      appDir: true,
-    },
-  };
-  export default nextConfig;
+  // Next.js 15 has these features enabled by default
+};
+
+export default nextConfig;
