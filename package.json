@@ -5,13 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-on-pages",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "npx wrangler pages deploy .vercel/output/static --project-name=<YOUR_PROJECT_NAME>"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.12",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.294.0",
